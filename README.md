@@ -10,7 +10,7 @@ Ein modernes, drag-and-drop-fähiges Kanban-Board entwickelt mit:
 - **LocalStorage** (Persistenz)
 
 ➡ **Live-Demo:**  
-https://DEINE-VERCEL-URL-HIER.vercel.app  
+https://kanban-board-seven-vert.vercel.app/
 
 ---
 
