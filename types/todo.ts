@@ -1,7 +1,7 @@
 export type Status = "created" | "in-progress" | "review" | "done";
 
-export type Todo = {
+export interface Todo {
   id: string;
   text: string;
   status: Status;
-};
+}

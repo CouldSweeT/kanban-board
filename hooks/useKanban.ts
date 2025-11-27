@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { DropResult } from "@hello-pangea/dnd";
-import type { Todo, Status } from "../types/todo";
+import type { Todo, Status, DndDropResult } from "../types";
+
 
 export function useKanban() {
   const [items, setItems] = useState<Todo[]>([]);
@@ -36,7 +36,7 @@ export function useKanban() {
     setItems((prev) => prev.filter((t) => t.id !== id));
   };
 
-  const onDragEnd = (result: DropResult) => {
+  const onDragEnd = (result: DndDropResult) => {
     const { source, destination, draggableId } = result;
 
     if (!destination) return;

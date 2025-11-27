@@ -1,16 +1,9 @@
 "use client";
 
-import { DraggableProvided, DraggableStateSnapshot } from "@hello-pangea/dnd";
 
-interface Props {
-  text: string;
-  id: string;
-  deleteTodo: (id: string) => void;
-  provided: DraggableProvided;
-  snapshot: DraggableStateSnapshot;
-}
+import type { TaskCardProps } from "../types";
 
-export default function TaskCard({ text, id, deleteTodo, provided, snapshot }: Props) {
+export default function TaskCard({ text, id, deleteTodo, provided, snapshot }: TaskCardProps) {
   return (
     <div
       ref={provided.innerRef}

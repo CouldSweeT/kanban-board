@@ -1,5 +1,11 @@
 # 🗂️ Aufgabenboard (Kanban)
 
+## 📱 Optimiert für Desktop
+
+Die aktuelle Version des Boards ist bewusst **für Desktop-Nutzung optimiert**.  
+Drag & Drop und die mehrspaltige Darstellung sind hauptsächlich für größere Bildschirme ausgelegt.
+
+
 Ein modernes, drag-and-drop-fähiges Kanban-Board entwickelt mit:
 
 - **Next.js 14**

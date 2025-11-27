@@ -2,16 +2,9 @@
 
 import { Droppable, Draggable } from "@hello-pangea/dnd";
 import TaskCard from "./TaskCard";
-import type { Todo } from "../types/todo";
+import type { ColumnProps } from "../types";
 
-interface Props {
-  title: string;
-  id: string;
-  items: Todo[];
-  deleteTodo: (id: string) => void;
-}
-
-export default function Column({ title, id, items, deleteTodo }: Props) {
+export default function Column({ title, id, items, deleteTodo }: ColumnProps) {
   return (
     <div className="bg-gray-100 p-4 rounded-lg min-h-[500px]">
       <h2 className="text-xl font-semibold mb-4">{title}</h2>
